@@ -1,5 +1,9 @@
 package com.qjh.service;
 
+import com.qjh.entity.User;
+
+import java.util.List;
+
 /**
  * @description:
  * @author: 卿建海
@@ -8,5 +12,11 @@ package com.qjh.service;
  * @modified By:
  */
 
-public class UserService {
+public interface UserService{
+    User getUser(int id);
+    List<User> getUsers();
+    void updateUser();
+    void deleteUser();
+    void deleteUsers();
+    void insertUser(User user);
 }
