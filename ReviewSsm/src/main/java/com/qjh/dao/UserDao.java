@@ -17,8 +17,8 @@ import java.util.List;
 public interface UserDao {
     User getUser(@Param("id") int id);
     List<User> getUsers();
-    void updateUser();
-    void deleteUser();
-    void deleteUsers();
-    void insertUser(User user);
+    int updateUser(User user);
+    int deleteUser(int id);
+    int deleteUsers(List<Integer> list);
+    int insertUser(User user);
 }

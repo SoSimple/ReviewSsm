@@ -1,6 +1,7 @@
 package com.qjh.service;
 
 import com.qjh.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,8 +16,8 @@ import java.util.List;
 public interface UserService{
     User getUser(int id);
     List<User> getUsers();
-    void updateUser();
-    void deleteUser();
-    void deleteUsers();
-    void insertUser(User user);
+    int updateUser(User user);
+    int deleteUser(int id);
+    int deleteUsers(List<Integer> list);
+    int insertUser(User user);
 }
