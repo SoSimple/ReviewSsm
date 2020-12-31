@@ -2,6 +2,7 @@ package com.qjh.dao;
 
 import com.qjh.entity.User;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @version:
  * @modified By:
  */
-
+@Repository
 public interface UserDao {
     User getUser(@Param("id") int id);
     List<User> getUsers();

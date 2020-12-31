@@ -16,7 +16,7 @@ import java.util.List;
  * @modified By:
  */
 @Service
-public class UserServiceImpl implements UserDao {
+public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 

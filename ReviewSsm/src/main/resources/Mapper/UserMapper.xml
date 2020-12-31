@@ -2,13 +2,19 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="userMapper">
+<mapper namespace="com.qjh.dao.UserDao">
     <select id="getUser" resultType="com.qjh.entity.User" parameterType="java.lang.Integer">
         select * from tb_users where id=#{id}
     </select>
-    <insert id="insertUser" parameterType="User" useGeneratedKeys="true">
+
+    <insert id="insertUser" parameterType="com.qjh.entity.User" useGeneratedKeys="true">
         insert  into tb_users values (username,age,password);
     </insert>
+
+    <update id="updateUser"></update>
+    <delete id="deleteUser"></delete>
+    <delete id="deleteUsers"></delete>
+    <select id="getUsers" resultType="com.qjh.entity.User"></select>
 
 </mapper>
 
