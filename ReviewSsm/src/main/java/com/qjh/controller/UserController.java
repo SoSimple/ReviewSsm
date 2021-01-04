@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: 卿建海
@@ -17,19 +19,22 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 @RequestMapping
-
+@ResponseBody
 public class UserController {
     @Autowired
     private UserService userService;
 
     @RequestMapping(value = "/getUser")
-    @ResponseBody
     private User getUser(){
         ModelAndView mav =new ModelAndView();
         User user = userService.getUser(1);
         mav.addObject("user",user);
         return user;
     }
-
+    @RequestMapping(value = "/getUsers")
+    private List<User> getUsers(){
+        List<User> users = userService.getUsers();
+        return users;
+    }
 
 }
