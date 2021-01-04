@@ -101,7 +101,8 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
       <version>4.3.30.RELEASE</version>
-    </dependency><!--Spring 依赖-->
+    </dependency>
+    <!--Spring 依赖-->
     <!--Mybatis-->
     <dependency>
       <groupId>org.mybatis</groupId>
