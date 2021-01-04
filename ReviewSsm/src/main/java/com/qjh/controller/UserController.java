@@ -1,9 +1,11 @@
 package com.qjh.controller;
 
 import com.qjh.entity.User;
-import com.qjh.service.impl.UserServiceImpl;
+import com.qjh.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -15,15 +17,18 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 @RequestMapping
-public class UserController {
 
-    private UserServiceImpl userService;
-    @RequestMapping("/getUser")
-    private ModelAndView getUser(){
+public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping(value = "/getUser")
+    @ResponseBody
+    private User getUser(){
         ModelAndView mav =new ModelAndView();
         User user = userService.getUser(1);
         mav.addObject("user",user);
-        return mav;
+        return user;
     }
 
 
