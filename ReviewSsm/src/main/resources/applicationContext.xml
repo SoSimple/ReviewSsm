@@ -32,6 +32,15 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
+    <!-- 定义视图解析器 -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 设置前缀 -->
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <!-- 设置后缀 -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
     <mvc:annotation-driven>
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
