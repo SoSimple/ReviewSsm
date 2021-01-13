@@ -23,4 +23,10 @@ public class UserController1 {
         return "this is a  test";
     }
 
+    @RequestMapping("/test1")
+    public String getUser1(){
+
+        return "/test.jsp";
+    }
+
 }
