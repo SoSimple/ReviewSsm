@@ -21,4 +21,5 @@ public interface UserDao {
     int deleteUser(int id);
     int deleteUsers(List<Integer> list);
     int insertUser(User user);
+    User checkUser(String userName);
 }

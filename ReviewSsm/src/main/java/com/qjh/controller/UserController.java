@@ -32,9 +32,11 @@ public class UserController {
         return user;
     }
     @RequestMapping(value = "/getUsers")
-    private List<User> getUsers(){
+    private ModelAndView getUsers(ModelAndView modelAndView){
         List<User> users = userService.getUsers();
-        return users;
+        modelAndView.addObject("users",users);
+        modelAndView.setViewName("test");
+        return modelAndView;
     }
 
 }

@@ -14,6 +14,9 @@
     <select id="getUser" resultType="com.qjh.entity.User" parameterType="java.lang.Integer">
         select * from tb_users where id=#{id}
     </select>
+    <select id="checkUser" resultType="com.qjh.entity.User" parameterType="java.lang.String">
+        select * from tb_users where username=#{userName}
+    </select>
     <select id="getUsers" resultType="com.qjh.entity.User">
         select * from tb_users
     </select>
