@@ -51,6 +51,11 @@ public class UserServiceImpl implements UserService {
         return userDao.insertUser(user);
     }
 
+    @Override
+    public User checkUser(String userName) {
+        return userDao.checkUser(userName);
+    }
+
 }
 
 
