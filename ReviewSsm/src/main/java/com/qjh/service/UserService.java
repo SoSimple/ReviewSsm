@@ -1,8 +1,6 @@
 package com.qjh.service;
 
 import com.qjh.entity.User;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 /**

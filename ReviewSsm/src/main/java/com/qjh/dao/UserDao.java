@@ -3,7 +3,6 @@ package com.qjh.dao;
 import com.qjh.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
 /**
@@ -22,4 +21,5 @@ public interface UserDao {
     int deleteUsers(List<Integer> list);
     int insertUser(User user);
     User checkUser(String userName);
+
 }

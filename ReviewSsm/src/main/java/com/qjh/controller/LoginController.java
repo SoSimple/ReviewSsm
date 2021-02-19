@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
@@ -22,11 +23,14 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
     @Autowired
     UserService userService;
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public String login(User user, HttpSession session){
-        String userName = user.getUserName();
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @ResponseBody
+    public String login(String userName,String password, HttpSession session){
+        System.out.println(userName.toString()+"从前台获取的数据"+password);
+        /*String userName = user.getUserName();*/
         User user1 = userService.checkUser(userName);
-        if(user.getUserName()==user1.getUserName()&&user.getPassword()==user1.getPassword()){
+        System.out.println(user1.toString());
+        if(password.toString()==user1.getPassword()){
             session.setAttribute("user",user1);
             return "redirect:/test";
         }
