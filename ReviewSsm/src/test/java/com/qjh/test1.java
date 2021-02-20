@@ -1,6 +1,5 @@
 package com.qjh;
 
-import com.qjh.dao.UserDao;
 import com.qjh.entity.User;
 import com.qjh.service.impl.UserServiceImpl;
 import org.junit.Test;
@@ -9,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -43,5 +43,18 @@ public class test1 {
             }
         }
     }
+    @Test
+    public void testPage(){
+        User user=new User();
+        user.setUserName("张三1");
+
+        List<User> users = userService.getUsers(user, 2, 5);
+        Iterator<User> iterator = users.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next().toString());
+        }
+
+    }
+
 
 }

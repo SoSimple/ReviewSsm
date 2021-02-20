@@ -29,9 +29,13 @@
             <array>
                 <bean class="com.github.pagehelper.PageInterceptor">
                     <property name="properties">
-                        <!-- config params as the following -->
+                        <!-- 配置mysql分页模式-->
                         <value>
-                            param1=value1
+                            helperDialect=mysql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
                         </value>
                     </property>
                 </bean>

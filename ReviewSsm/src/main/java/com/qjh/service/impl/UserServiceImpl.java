@@ -1,5 +1,7 @@
 package com.qjh.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.qjh.dao.UserDao;
 import com.qjh.entity.User;
 import com.qjh.service.UserService;
@@ -24,8 +26,22 @@ public class UserServiceImpl implements UserService {
     public User getUser(int id) {
         return userDao.getUser(id);
     }
+    /**
+     * 测试 Mybatis-PagehHelper
+     * @param user
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<User> getUsers(User user,Integer page,Integer rows) {
+        PageHelper.startPage(page,rows);
+        List<User> users = userDao.getUsers();
+        PageInfo<User> userPageInfo = new PageInfo<>(users);
+        System.out.println(userPageInfo.getPageNum()+" "+userPageInfo.getPageSize()+" "+userPageInfo.getPages()
+                +""+userPageInfo.getTotal());
+        return users;
+    }
 
-    @Override
     public List<User> getUsers() {
         List<User> users = userDao.getUsers();
         return users;

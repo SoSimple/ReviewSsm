@@ -25,18 +25,21 @@ public class UserController {
 
 
     @RequestMapping(value = "/getUser")
-    private User getUser(){
+    public User getUser(){
         ModelAndView mav =new ModelAndView();
         User user = userService.getUser(1);
         mav.addObject("user",user);
         return user;
     }
     @RequestMapping(value = "/getUsers")
-    private ModelAndView getUsers(ModelAndView modelAndView){
+    public ModelAndView getUsers(ModelAndView modelAndView){
         List<User> users = userService.getUsers();
         modelAndView.addObject("users",users);
         modelAndView.setViewName("test");
         return modelAndView;
     }
+
+
+
 
 }
