@@ -24,6 +24,23 @@
         <property name="typeAliasesPackage" value="com.qjh.entity"></property>
         <!-- 映射资 源路径 -->
         <property name="mapperLocations" value="classpath*:Mapper/*.xml"></property>
+        <!-- other configuration -->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <!-- 配置mysql分页模式-->
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!-- 用于扫描mapper接口的配置(mapper解析器) -->

@@ -23,17 +23,36 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
     @Autowired
     UserService userService;
+
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ResponseBody
     public String login(String userName,String password, HttpSession session){
         System.out.println(userName.toString()+"从前台获取的数据"+password);
         /*String userName = user.getUserName();*/
         User user1 = userService.checkUser(userName);
-        System.out.println(user1.toString());
-        if(password.toString()==user1.getPassword()){
-            session.setAttribute("user",user1);
-            return "redirect:/test";
+        if(user1!=null){
+            System.out.println(user1.toString());
+            System.out.println(password+" "+user1.getPassword());
+            if(password.equals(user1.getPassword())){
+                session.setAttribute("user",user1);
+                return "redirect:/get/test";
+            }
+            return "fail";
+        }else{
+            return "不存在此用户";
         }
-        return "/fail";
     }
+    @RequestMapping("/testJump")
+    public String testJump(){
+       // return "redirect:/get/test";
+        return "fail";
+    }
+
+    @RequestMapping("/login1")
+    public String login(){
+        // return "redirect:/get/test";
+        return "login";
+    }
+
+
 }

@@ -48,7 +48,7 @@ public class test1 {
         User user=new User();
         user.setUserName("张三1");
 
-        List<User> users = userService.getUsers(user, 2, 5);
+        List<User> users = userService.getUsers(user, 1, 6);
         Iterator<User> iterator = users.iterator();
         while(iterator.hasNext()){
             System.out.println(iterator.next().toString());
