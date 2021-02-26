@@ -16,35 +16,16 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="954bc1c4-85de-401d-9842-a76ca3b92ecf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/Spring_Aop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring_Aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Ioc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/doc/StudyRecord.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/doc/~$udyRecord.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/factory/DynamicFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/factory/StaticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-db.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qjh/test/DataSourcesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qjh/test/UserDaoTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="954bc1c4-85de-401d-9842-a76ca3b92ecf" name="Default Changelist" comment="20220226  spring 复习" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,8 +171,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614301972446</updated>
-      <workItem from="1614301978489" duration="20631000" />
+      <workItem from="1614301978489" duration="21473000" />
     </task>
+    <task id="LOCAL-00001" summary="20220226  spring 复习">
+      <created>1614326644078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614326644078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="20220226  spring 复习">
+      <created>1614329471531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614329471531</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +198,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -210,6 +218,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="20220226  spring 复习" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220226  spring 复习" />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="0" key="#Project_Structure" timestamp="1614302547830">
@@ -220,38 +230,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1614314511209" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1614325997971">
+    <state width="1237" height="241" key="GridCell.Tab.0.bottom" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614325997971" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1614325997971">
+    <state width="1237" height="241" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.0.center" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614325997971" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1614325997971">
+    <state width="1237" height="241" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.0.left" timestamp="1614329587144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614325997971" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1614325997971">
+    <state width="1237" height="241" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614329587144" />
+    <state width="1237" height="241" key="GridCell.Tab.0.right" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614325997971" />
-    <state width="1237" height="241" key="GridCell.Tab.1.bottom" timestamp="1614306952868">
+    <state width="1237" height="241" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.1.bottom" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="241" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614306952868" />
-    <state width="1237" height="241" key="GridCell.Tab.1.center" timestamp="1614306952867">
+    <state width="1237" height="241" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.1.center" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="241" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1614306952867" />
-    <state width="1237" height="241" key="GridCell.Tab.1.left" timestamp="1614306952867">
+    <state width="1237" height="241" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.1.left" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="241" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1614306952867" />
-    <state width="1237" height="241" key="GridCell.Tab.1.right" timestamp="1614306952867">
+    <state width="1237" height="241" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1237" height="241" key="GridCell.Tab.1.right" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="241" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1614306952867" />
+    <state width="1237" height="241" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1614329476318">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614329476318" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1614306822145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
