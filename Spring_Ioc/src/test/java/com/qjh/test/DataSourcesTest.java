@@ -18,7 +18,7 @@ public class DataSourcesTest {
     public void test1() throws PropertyVetoException, SQLException {
         ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
         comboPooledDataSource.setDriverClass("com.mysql.jdbc.Driver");
-        comboPooledDataSource.setJdbcUrl("jdbc:mysql://localhost:3306/changgou");
+        comboPooledDataSource.setJdbcUrl("jdbc:mysql://39.101.218.185:3306/changgou");
         comboPooledDataSource.setUser("root");
         comboPooledDataSource.setPassword("root");
 
@@ -31,7 +31,7 @@ public class DataSourcesTest {
     public void test2() throws PropertyVetoException, SQLException {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        druidDataSource.setUrl("jdbc:mysql://localhost:3306/changgou");
+        druidDataSource.setUrl("jdbc:mysql://39.101.218.185:3306/changgou");
         druidDataSource.setUsername("root");
         druidDataSource.setPassword("root");
 

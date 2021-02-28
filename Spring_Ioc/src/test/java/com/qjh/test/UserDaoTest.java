@@ -20,6 +20,7 @@ public class UserDaoTest {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) classPathXmlApplicationContext.getBean("userService");
         userService.save();
+        classPathXmlApplicationContext.close();
     }
     @Test
     public void testBeanScopeSingleton(){
@@ -67,6 +68,13 @@ public class UserDaoTest {
         UserDao userDao1 = (UserDao) classPathXmlApplicationContext.getBean("UserDaoDynamicFactory");
         UserDao userDao2 = (UserDao) classPathXmlApplicationContext.getBean("UserDaoDynamicFactory");
         System.out.println(userDao1.toString());
+    }
+    @Test
+    public void test(){
+        int a=10;
+        int b=20;
+        int c=4;
+        System.out.println(++b+c+a++);
     }
 
 }

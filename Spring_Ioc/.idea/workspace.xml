@@ -25,7 +25,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="954bc1c4-85de-401d-9842-a76ca3b92ecf" name="Default Changelist" comment="20220226  spring 复习" />
+    <list default="true" id="954bc1c4-85de-401d-9842-a76ca3b92ecf" name="Default Changelist" comment="20220226  spring 复习">
+      <change afterPath="$PROJECT_DIR$/.idea/Spring_Ioc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qjh/config/SpringConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/StudyRecord.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/StudyRecord.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qjh/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qjh/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qjh/test/DataSourcesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qjh/test/DataSourcesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qjh/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qjh/test/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/factory/DynamicFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/factory/DynamicFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/factory/StaticFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/factory/StaticFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qjh/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qjh/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qjh/test/DataSourcesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qjh/test/DataSourcesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qjh/test/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qjh/test/UserDaoTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,14 +84,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ideaworkspace2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.testSave2">
+  <component name="RunManager" selected="JUnit.UserDaoTest.test">
     <configuration name="DataSourcesTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Ioc" />
       <extension name="coverage">
@@ -87,22 +110,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataSourcesTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring_Ioc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qjh.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qjh.test" />
-      <option name="MAIN_CLASS_NAME" value="com.qjh.test.DataSourcesTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DataSourcesTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring_Ioc" />
       <extension name="coverage">
@@ -114,6 +121,22 @@
       <option name="PACKAGE_NAME" value="com.qjh.test" />
       <option name="MAIN_CLASS_NAME" value="com.qjh.test.DataSourcesTest" />
       <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_Ioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qjh.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qjh.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qjh.test.UserDaoTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.test" />
         <item itemvalue="JUnit.UserDaoTest.testSave2" />
-        <item itemvalue="JUnit.UserDaoTest.testBeanScopePrototype" />
-        <item itemvalue="JUnit.DataSourcesTest.test4" />
-        <item itemvalue="JUnit.DataSourcesTest.test3" />
         <item itemvalue="JUnit.DataSourcesTest.test2" />
+        <item itemvalue="JUnit.DataSourcesTest.test4" />
+        <item itemvalue="JUnit.UserDaoTest.testBeanScopePrototype" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +195,8 @@
       <option name="presentableId" value="Default" />
       <updated>1614301972446</updated>
       <workItem from="1614301978489" duration="21473000" />
+      <workItem from="1614392586536" duration="4218000" />
+      <workItem from="1614509797601" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="20220226  spring 复习">
       <created>1614326644078</created>
@@ -215,6 +240,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -230,22 +256,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1614314511209" />
-    <state width="1237" height="241" key="GridCell.Tab.0.bottom" timestamp="1614329587145">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1614510304963">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="241" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
-    <state width="1237" height="241" key="GridCell.Tab.0.center" timestamp="1614329587145">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614510304963" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1614510304963">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="241" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
-    <state width="1237" height="241" key="GridCell.Tab.0.left" timestamp="1614329587144">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614510304963" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1614510304962">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="241" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614329587144" />
-    <state width="1237" height="241" key="GridCell.Tab.0.right" timestamp="1614329587145">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614510304962" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1614510304963">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="241" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614510304963" />
     <state width="1237" height="241" key="GridCell.Tab.1.bottom" timestamp="1614329587145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -262,6 +292,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="241" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1614329587145" />
+    <state x="341" y="149" key="SettingsEditor" timestamp="1614395189058">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="149" key="SettingsEditor/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614395189058" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1614329476318">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -270,9 +304,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1614306822145" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1614314041905">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="398" y="1" width="882" height="1008" key="search.everywhere.popup" timestamp="1614395099016">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1614314041905" />
+    <state x="398" y="1" width="882" height="1008" key="search.everywhere.popup/1680.89.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1614395099016" />
   </component>
 </project>
